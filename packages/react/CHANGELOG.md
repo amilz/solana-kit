@@ -1,5 +1,20 @@
 # @solana/react
 
+## 5.5.0
+
+### Patch Changes
+
+- [#1210](https://github.com/anza-xyz/kit/pull/1210) [`56433e9`](https://github.com/anza-xyz/kit/commit/56433e9c87ddb3f6aeb7bb4dd029db86785341cb) Thanks [@rajgoesout](https://github.com/rajgoesout)! - Return immediately when passing empty array of transactions to `useSignTransactions` and `useSignAndSendTransactions`
+
+- Updated dependencies [[`6af7c15`](https://github.com/anza-xyz/kit/commit/6af7c156a9cd196d0d5ecb374fe696ec659756bf)]:
+    - @solana/errors@5.5.0
+    - @solana/addresses@5.5.0
+    - @solana/keys@5.5.0
+    - @solana/signers@5.5.0
+    - @solana/transaction-messages@5.5.0
+    - @solana/transactions@5.5.0
+    - @solana/promises@5.5.0
+
 ## 5.4.0
 
 ### Minor Changes
