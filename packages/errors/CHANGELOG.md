@@ -1,5 +1,11 @@
 # @solana/errors
 
+## 5.5.0
+
+### Minor Changes
+
+- [#1230](https://github.com/anza-xyz/kit/pull/1230) [`6af7c15`](https://github.com/anza-xyz/kit/commit/6af7c156a9cd196d0d5ecb374fe696ec659756bf) Thanks [@mcintyre94](https://github.com/mcintyre94)! - Add a function `unwrapSimulationError`, which will return the cause of an error if it is a simulation error. Otherwise it is returned unchanged.
+
 ## 5.4.0
 
 ### Patch Changes

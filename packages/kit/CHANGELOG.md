@@ -1,5 +1,35 @@
 # @solana/kit
 
+## 5.5.0
+
+### Patch Changes
+
+- [#1234](https://github.com/anza-xyz/kit/pull/1234) [`7e0377b`](https://github.com/anza-xyz/kit/commit/7e0377b41caed78f81b3fe8272efbc9d4af0464a) Thanks [@mcintyre94](https://github.com/mcintyre94)! - Fix a race condition in `sendAndConfirmDurableNonceTransactionFactory`
+
+- Updated dependencies [[`b174ed5`](https://github.com/anza-xyz/kit/commit/b174ed531c15d34e354657d3945e4ea5b38932bc), [`a47e441`](https://github.com/anza-xyz/kit/commit/a47e44109e90ddb03193d4e1e207f9e68118679d), [`589d761`](https://github.com/anza-xyz/kit/commit/589d761483a8feaf46b4cda7a97ec7abd5e7ab90), [`6af7c15`](https://github.com/anza-xyz/kit/commit/6af7c156a9cd196d0d5ecb374fe696ec659756bf)]:
+    - @solana/instruction-plans@5.5.0
+    - @solana/errors@5.5.0
+    - @solana/accounts@5.5.0
+    - @solana/addresses@5.5.0
+    - @solana/instructions@5.5.0
+    - @solana/keys@5.5.0
+    - @solana/offchain-messages@5.5.0
+    - @solana/programs@5.5.0
+    - @solana/rpc@5.5.0
+    - @solana/rpc-api@5.5.0
+    - @solana/rpc-subscriptions@5.5.0
+    - @solana/rpc-types@5.5.0
+    - @solana/signers@5.5.0
+    - @solana/sysvars@5.5.0
+    - @solana/transaction-confirmation@5.5.0
+    - @solana/transaction-messages@5.5.0
+    - @solana/transactions@5.5.0
+    - @solana/rpc-parsed-types@5.5.0
+    - @solana/codecs@5.5.0
+    - @solana/functional@5.5.0
+    - @solana/plugin-core@5.5.0
+    - @solana/rpc-spec-types@5.5.0
+
 ## 5.4.0
 
 ### Patch Changes
