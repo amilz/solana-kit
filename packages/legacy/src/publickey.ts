@@ -6,7 +6,7 @@ import {
     getAddressEncoder,
     getProgramDerivedAddress,
     isAddress,
-    isOffCurveAddress
+    isOffCurveAddress,
 } from '@solana/addresses';
 import { fromLegacyPublicKey as compatFromLegacyPublicKey } from '@solana/compat';
 import type { PublicKey as LegacyPublicKey } from '@solana/web3.js';
@@ -15,14 +15,7 @@ import type { PublicKey as LegacyPublicKey } from '@solana/web3.js';
  * Value used to represent a public key in various input forms.
  * Matches the legacy web3.js PublicKeyInitData type.
  */
-export type PublicKeyInitData = number | string | Uint8Array | Array<number> | PublicKeyData;
-
-/**
- * JSON representation of a PublicKey, matching legacy web3.js.
- */
-export type PublicKeyData = {
-    _bn: string; // base58 string for JSON serialization
-};
+export type PublicKeyInitData = Array<number> | PublicKey | Uint8Array | number | string;
 
 /**
  * Maximum length of a program derived address seed.
@@ -83,9 +76,6 @@ export class PublicKey {
             }
             this._address = getAddressDecoder().decode(bytes);
             this._bytes = bytes;
-        } else if ('_bn' in value) {
-            // JSON deserialization format
-            this._address = address(value._bn);
         } else {
             throw new Error('Invalid public key input');
         }
@@ -180,9 +170,7 @@ export class PublicKey {
      */
     static createWithSeedSync(_fromPublicKey: PublicKey, _seed: string, _programId: PublicKey): PublicKey {
         // For sync version, we need a sync hash. Use the same approach as Kit.
-        throw new Error(
-            'createWithSeedSync is not supported in @solana/legacy. Use createWithSeed (async) instead.',
-        );
+        throw new Error('createWithSeedSync is not supported in @solana/legacy. Use createWithSeed (async) instead.');
     }
 
     /**

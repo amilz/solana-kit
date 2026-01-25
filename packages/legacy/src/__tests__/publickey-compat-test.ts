@@ -192,7 +192,10 @@ describe('PublicKey compatibility with @solana/web3.js', () => {
     describe('createProgramAddress', () => {
         it('produces identical address to web3.js', async () => {
             // Use a known bump that produces a valid PDA
-            const [, bump] = await Web3PublicKey.findProgramAddress([Buffer.from('test')], new Web3PublicKey(TOKEN_PROGRAM));
+            const [, bump] = await Web3PublicKey.findProgramAddress(
+                [Buffer.from('test')],
+                new Web3PublicKey(TOKEN_PROGRAM),
+            );
 
             const seeds = [Buffer.from('test'), new Uint8Array([bump])];
             const programId = new PublicKey(TOKEN_PROGRAM);
@@ -213,7 +216,10 @@ describe('PublicKey compatibility with @solana/web3.js', () => {
         });
 
         it('returns false for PDAs (same as web3.js)', async () => {
-            const [pda] = await Web3PublicKey.findProgramAddress([Buffer.from('test')], new Web3PublicKey(TOKEN_PROGRAM));
+            const [pda] = await Web3PublicKey.findProgramAddress(
+                [Buffer.from('test')],
+                new Web3PublicKey(TOKEN_PROGRAM),
+            );
 
             expect(PublicKey.isOnCurve(pda.toBase58())).toBe(Web3PublicKey.isOnCurve(pda.toBase58()));
             expect(PublicKey.isOnCurve(pda.toBase58())).toBe(false);
@@ -222,7 +228,7 @@ describe('PublicKey compatibility with @solana/web3.js', () => {
 });
 
 describe('PublicKey standalone tests', () => {
-    describe('Kit interop', () => {
+    describe('kit interop', () => {
         it('toAddress returns valid Kit Address', () => {
             const pk = new PublicKey(RANDOM_ADDRESS);
             expect(pk.toAddress()).toBe(RANDOM_ADDRESS);

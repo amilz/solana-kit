@@ -7,9 +7,11 @@
 
 // Phase 1: PublicKey
 export { PublicKey } from './publickey';
+export type { PublicKeyInitData } from './publickey';
 
-// Phase 2: Keypair + Signer (TODO)
-// export { Keypair } from './keypair';
+// Phase 2: Keypair + Signer
+export { Keypair } from './keypair';
+export type { Signer } from './keypair';
 
 // Phase 3: Message (TODO)
 // export { Message, MessageV0 } from './message';

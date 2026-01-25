@@ -765,6 +765,9 @@ importers:
       '@solana/codecs':
         specifier: workspace:*
         version: link:../codecs
+      '@solana/compat':
+        specifier: workspace:*
+        version: link:../compat
       '@solana/errors':
         specifier: workspace:*
         version: link:../errors
