@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../solana-web3.js"
+		}
+	],
+	"settings": {}
+}

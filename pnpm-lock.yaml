@@ -754,6 +754,43 @@ importers:
         specifier: ^5.0.0
         version: 5.9.3
 
+  packages/legacy:
+    dependencies:
+      '@solana/addresses':
+        specifier: workspace:*
+        version: link:../addresses
+      '@solana/assertions':
+        specifier: workspace:*
+        version: link:../assertions
+      '@solana/codecs':
+        specifier: workspace:*
+        version: link:../codecs
+      '@solana/errors':
+        specifier: workspace:*
+        version: link:../errors
+      '@solana/keys':
+        specifier: workspace:*
+        version: link:../keys
+      '@solana/rpc':
+        specifier: workspace:*
+        version: link:../rpc
+      '@solana/signers':
+        specifier: workspace:*
+        version: link:../signers
+      '@solana/transaction-messages':
+        specifier: workspace:*
+        version: link:../transaction-messages
+      '@solana/transactions':
+        specifier: workspace:*
+        version: link:../transactions
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.3
+    devDependencies:
+      '@solana/web3.js':
+        specifier: ^1.98.0
+        version: 1.98.4(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+
   packages/nominal-types:
     dependencies:
       typescript:
