@@ -13,11 +13,33 @@ export type { PublicKeyInitData } from './publickey';
 export { Keypair } from './keypair';
 export type { Signer } from './keypair';
 
-// Phase 3: Message (TODO)
-// export { Message, MessageV0 } from './message';
+// Phase 3: Message
+export { Message, MessageV0, VersionedMessage } from './message';
+export type {
+    AccountMeta,
+    AddressLookupTableAccount,
+    CompileLegacyArgs,
+    CompiledInstruction,
+    CompileV0Args,
+    InstructionInput,
+    MessageAddressTableLookup,
+    MessageArgs,
+    MessageCompiledInstruction,
+    MessageHeader,
+    MessageV0Args,
+    TransactionInstruction,
+} from './message';
 
-// Phase 4: Transaction (TODO)
-// export { Transaction, VersionedTransaction } from './transaction';
+// Phase 4: Transaction
+export { Transaction, VersionedTransaction } from './transaction';
+export type {
+    NonceInformation,
+    SerializeConfig,
+    SignaturePubkeyPair,
+    TransactionBlockhashCtor,
+    TransactionCtorFields,
+    TransactionNonceCtor,
+} from './transaction';
 
 // Phase 5: Connection (TODO)
 // export { Connection } from './connection';

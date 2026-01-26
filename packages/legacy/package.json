@@ -80,6 +80,7 @@
         "@solana/compat": "workspace:*",
         "@solana/codecs": "workspace:*",
         "@solana/errors": "workspace:*",
+        "@solana/instructions": "workspace:*",
         "@solana/keys": "workspace:*",
         "@solana/rpc": "workspace:*",
         "@solana/signers": "workspace:*",
