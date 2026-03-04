@@ -1,5 +1,19 @@
 # @solana/sysvars
 
+## 6.2.0
+
+### Patch Changes
+
+- [#1428](https://github.com/anza-xyz/kit/pull/1428) [`b28b843`](https://github.com/anza-xyz/kit/commit/b28b8439b1f62aefd9c35c4bea733816975033e5) Thanks [@datasalaryman](https://github.com/datasalaryman)! - use internals codecs dependencies
+
+- Updated dependencies [[`5390602`](https://github.com/anza-xyz/kit/commit/53906024cffc3facb7259ab65ab974b6b1038f56), [`3f4c5f0`](https://github.com/anza-xyz/kit/commit/3f4c5f003e343c21a785e8f339f84c8d6bd3a3b1)]:
+    - @solana/codecs-data-structures@6.2.0
+    - @solana/accounts@6.2.0
+    - @solana/codecs-core@6.2.0
+    - @solana/codecs-numbers@6.2.0
+    - @solana/errors@6.2.0
+    - @solana/rpc-types@6.2.0
+
 ## 6.1.0
 
 ### Patch Changes
