@@ -1,5 +1,19 @@
 # @solana/instruction-plans
 
+## 6.6.0
+
+### Patch Changes
+
+- [#1497](https://github.com/anza-xyz/kit/pull/1497) [`f055201`](https://github.com/anza-xyz/kit/commit/f055201c2dd3a4a69b9894d66b622ae81c13b8cd) Thanks [@mcintyre94](https://github.com/mcintyre94)! - The transaction planner now handles the four new transaction compilation constraint errors (`TOO_MANY_ACCOUNT_ADDRESSES`, `TOO_MANY_SIGNER_ADDRESSES`, `TOO_MANY_INSTRUCTIONS`, `TOO_MANY_ACCOUNTS_IN_INSTRUCTION`) gracefully. When adding an instruction to an existing candidate transaction would violate a constraint, the planner splits it into a new transaction — the same behaviour it already had for transactions that exceed the byte size limit. If even a fresh transaction cannot accommodate the instruction, the constraint error propagates to the caller.
+
+- Updated dependencies [[`7f02d23`](https://github.com/anza-xyz/kit/commit/7f02d23948cc09e3f0bc70931d845569f1cb38ad)]:
+    - @solana/errors@6.6.0
+    - @solana/transaction-messages@6.6.0
+    - @solana/instructions@6.6.0
+    - @solana/keys@6.6.0
+    - @solana/transactions@6.6.0
+    - @solana/promises@6.6.0
+
 ## 6.5.0
 
 ### Patch Changes
