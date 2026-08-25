@@ -1,5 +1,20 @@
 # @solana/plugin-interfaces
 
+## 8.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @solana/accounts@8.0.1
+    - @solana/addresses@8.0.1
+    - @solana/keys@8.0.1
+    - @solana/rpc-types@8.0.1
+    - @solana/transactions@8.0.1
+    - @solana/instruction-plans@8.0.1
+    - @solana/signers@8.0.1
+    - @solana/rpc-spec@8.0.1
+    - @solana/rpc-subscriptions-spec@8.0.1
+
 ## 8.0.0
 
 ### Minor Changes

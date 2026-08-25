@@ -1,5 +1,7 @@
 # @solana/fast-stable-stringify
 
+## 8.0.1
+
 ## 8.0.0
 
 ## 7.1.1

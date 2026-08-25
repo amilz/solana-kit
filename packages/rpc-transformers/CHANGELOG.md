@@ -1,5 +1,16 @@
 # @solana/rpc-transformers
 
+## 8.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @solana/rpc-types@8.0.1
+    - @solana/errors@8.0.1
+    - @solana/functional@8.0.1
+    - @solana/nominal-types@8.0.1
+    - @solana/rpc-spec-types@8.0.1
+
 ## 8.0.0
 
 ### Major Changes

@@ -1,5 +1,20 @@
 # @solana/program-client-core
 
+## 8.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @solana/accounts@8.0.1
+    - @solana/addresses@8.0.1
+    - @solana/rpc-api@8.0.1
+    - @solana/plugin-interfaces@8.0.1
+    - @solana/instruction-plans@8.0.1
+    - @solana/instructions@8.0.1
+    - @solana/signers@8.0.1
+    - @solana/codecs-core@8.0.1
+    - @solana/errors@8.0.1
+
 ## 8.0.0
 
 ### Patch Changes
