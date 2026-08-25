@@ -1,5 +1,14 @@
 # @solana/codecs-data-structures
 
+## 8.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @solana/codecs-core@8.0.1
+    - @solana/codecs-numbers@8.0.1
+    - @solana/errors@8.0.1
+
 ## 8.0.0
 
 ### Patch Changes

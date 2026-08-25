@@ -1,5 +1,20 @@
 # @solana/signers
 
+## 8.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @solana/addresses@8.0.1
+    - @solana/keys@8.0.1
+    - @solana/offchain-messages@8.0.1
+    - @solana/transaction-messages@8.0.1
+    - @solana/transactions@8.0.1
+    - @solana/instructions@8.0.1
+    - @solana/codecs-core@8.0.1
+    - @solana/errors@8.0.1
+    - @solana/nominal-types@8.0.1
+
 ## 8.0.0
 
 ### Patch Changes
